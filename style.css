@@ -56,7 +56,7 @@ body {
 }
 
 .brand-name {
-  font-size: 20px;
+  font-size: 24px;
   font-weight: 400;
   color: white;
   font-family: "Work Sans", sans-serif;
@@ -65,22 +65,19 @@ body {
 }
 
 .tagline {
-  font-size: 50px;
-  font-weight: 700;
-  color: wheat;
+  font-size: 6rem;
+  color: white;
   font-family: "Work Sans", sans-serif;
 }
 
 .button-container {
   width: auto;
-  margin-top: 67px;
   display: flex;
   gap: 16px;
 }
 
 .button-container button {
-  font-size: 14px;
-  font-weight: 700;
+  font-size: 16px;
   font-family: "Work Sans", sans-serif;
   padding: 11px;
   text-transform: uppercase;
@@ -114,18 +111,22 @@ footer a {
 @media screen and (max-width: 768px) {
   .button-container {
     flex-direction: column;
+    margin-top: 67px;
     width: 290px;
+  }
+  .tagline{
+    font-size: 50px;
+    font-weight: 700;
   }
   .button-container button {
     background-color: #0f1314;
     width: 100%;
+    font-weight: 700;
+    font-size: 14px;
     border: 1px solid #8b8b8b;
     background-color: #0f1314;
   }
-}
-
-@media screen and (max-width: 365px) {
-  .tagline {
-    font-size: 40px;
-  }
+  .fa-brands, .fa-regular{
+    display: none;
+  }  
 }
