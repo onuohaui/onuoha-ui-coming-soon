@@ -1,7 +1,11 @@
-@import url("https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@font-face {
+  font-family: "Mattone";
+  src: url("[directory_folder]/Mattone.woff2") format("woff2"),
+       url("[directory_folder]/Mattone.woff") format("woff");
+}
 
 body {
-  font-family: "Work Sans", sans-serif;
+  font-family: "Mattone", sans-serif;
   margin: 0;
   background-color: #000;
   min-height: 100vh;
@@ -14,7 +18,8 @@ body {
   overflow: hidden;
   z-index: 1;
   margin: 0;
-  opacity: 0.2;
+  //opacity: 0.2;
+  text-transform: uppercase;
 }
 
 .m-scroll {
@@ -27,10 +32,10 @@ body {
 }
 
 .m-scroll span {
-  font-size: 70px;
+  font-size: 80px;
   display: inline-block;
   font-weight: 900;
-  font-family: Questrial, sans-serif;
+  font-family: "Mattone", sans-serif;
   margin: 0;
   padding: 0;
   color: #fff;
@@ -45,88 +50,119 @@ body {
   }
 }
 
-.bd-container {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  padding: 1rem;
-  min-height: 300px;
-  margin: auto;
+.bd-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem;
+    min-height: 300px;
+    margin: auto ;
 }
 
-.brand-name {
-  font-size: 24px;
-  font-weight: 400;
-  color: white;
-  font-family: "Work Sans", sans-serif;
-  text-transform: uppercase;
-  letter-spacing: 3px;
+.brand-name{
+    font-size: 35px;
+    font-weight: 400;
+    color: white;
+    font-family: "Mattone", sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 10px;
 }
 
-.tagline {
-  font-size: 6rem;
-  color: white;
-  font-family: "Work Sans", sans-serif;
+.tagline{
+    font-size: 6vw;
+    font-weight: 700;
+    color: rgb(255, 255, 255);
+    font-family: "Mattone", sans-serif;
 }
 
-.button-container {
-  width: auto;
-  display: flex;
-  gap: 16px;
+.button-container{
+    width: auto;
+    margin-top: 20px;
+    display: flex;
+    gap: 16px;
 }
 
-.button-container button {
-  font-size: 16px;
-  font-family: "Work Sans", sans-serif;
-  padding: 11px;
-  text-transform: uppercase;
-  background-color: rgba(0, 0, 0, 0);
-  color: white;
-  border: none;
+.button-container button{
+    font-size: 14px;
+    font-weight: 500;
+    font-family: "Mattone", sans-serif;
+    padding: 11px;
+    text-transform: uppercase;
+    background-color: rgba(0, 0, 0, 0);
+    color: white;
+    border: none;
 }
 
-.button-container button:hover {
-  background-color: #fffb00;
-  color: black;
+.button-container button:hover{
+    background-color: #FFFB00;
+    color: black;
+    transition: all 0.5s;
 }
 
-footer {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: 21px 0.5rem;
-  color: white;
-  background-color: #0f1314;
-  font-size: 10px;
-  gap: 1rem;
+footer{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 21px 5rem;
+    color: white;
+    background-color: #0F1314;
+    font-size: 1.5vw;
+    //opacity: .4;
+    gap: 1rem;
 }
 
-footer a {
-  text-decoration: none;
-  color: inherit;
-  font-size: inherit;
+footer a{
+    text-decoration: none;
+    color: #FFFB00;
+    font-size: inherit;
 }
 
 @media screen and (max-width: 768px) {
+
   .button-container {
     flex-direction: column;
-    margin-top: 67px;
     width: 290px;
-  }
-  .tagline{
-    font-size: 50px;
-    font-weight: 700;
+    margin-top: 30px;
   }
   .button-container button {
     background-color: #0f1314;
     width: 100%;
-    font-weight: 700;
-    font-size: 14px;
-    border: 1px solid #8b8b8b;
-    background-color: #0f1314;
+    border: 1px solid #8B8B8B;
+    background-color: #0F1314;
+    padding-top: 15px;
+    padding-bottom: 15px;
   }
-  .fa-brands, .fa-regular{
-    display: none;
-  }  
+  .m-scroll span {
+    color: #FFFB00;
+  }
+
+  .tagline{
+    font-size: 45px;
+  }
+
+  .brand-name{
+      font-size: 25px;
+      font-weight: 400;
+      letter-spacing: 5px;
+  }
+
+  footer{
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 21px 1rem;
+      color: white;
+      background-color: #0F1314;
+      font-size: 2vw;
+      //opacity: .4;
+      gap: 1rem;
+  }
+
+}
+
+@media screen and (max-width: 365px) {
+    .tagline{
+        font-size: 40px;
+    }
 }
