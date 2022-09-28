@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Forum&display=swap');
+
 @font-face {
   font-family: "Mattone";
   src: url("./fonts/Mattone-150.woff2") format("woff2"),
@@ -64,7 +66,7 @@ body {
   font-size: 35px;
   font-weight: 400;
   color: white;
-  font-family: "Mattone", sans-serif;
+  font-family: "Oxygen", sans-serif;
   text-transform: uppercase;
   letter-spacing: 10px;
 }
@@ -86,12 +88,13 @@ body {
 .button-container button {
   font-size: 14px;
   font-weight: 500;
-  font-family: "Mattone", sans-serif;
+  font-family: "Oxygen", sans-serif;
   padding: 11px;
   text-transform: uppercase;
   background-color: rgba(0, 0, 0, 0);
   color: white;
   border: none;
+  letter-spacing: 2px;
 }
 
 .button-container button:hover {
@@ -137,11 +140,11 @@ footer a {
   }
 
   .tagline {
-    font-size: 45px;
+    font-size: 43px;
   }
 
   .brand-name {
-    font-size: 25px;
+    font-size: 23px;
     font-weight: 400;
     letter-spacing: 5px;
   }
@@ -153,7 +156,7 @@ footer a {
     padding: 21px 1rem;
     color: white;
     background-color: #0f1314;
-    font-size: 2vw;
+    font-size: 1.7vw;
     /* opacity: .4; */
     gap: 1rem;
   }
