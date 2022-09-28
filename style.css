@@ -137,6 +137,9 @@ footer a {
   }
   .m-scroll span {
     color: #fffb00;
+    /* //opacity: 0.2; */
+    text-transform: lowercase;
+    font-size: 50px;
   }
 
   .tagline {
