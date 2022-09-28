@@ -151,12 +151,13 @@ footer a {
 
   footer {
     display: flex;
+    flex-direction: column-reverse;
     align-items: center;
     justify-content: space-between;
     padding: 21px 1rem;
     color: white;
     background-color: #0f1314;
-    font-size: 1.7vw;
+    font-size: 3vw;
     /* opacity: .4; */
     gap: 1rem;
   }
