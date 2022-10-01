@@ -98,7 +98,7 @@ body {
 }
 
 .button-container button:hover {
-  background-color: #fffb00;
+  background-color: #FFDE59;
   color: black;
   transition: all 0.5s;
 }
@@ -117,7 +117,7 @@ footer {
 
 footer a {
   text-decoration: none;
-  color: #fffb00;
+  color: #FFDE59;
   font-size: inherit;
 }
 
@@ -136,7 +136,7 @@ footer a {
     padding-bottom: 15px;
   }
   .m-scroll span {
-    color: #fffb00;
+    color: #FFDE59;
     /* //opacity: 0.2; */
     text-transform: lowercase;
     font-size: 50px;
